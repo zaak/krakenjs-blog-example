@@ -68,6 +68,16 @@
             "module": {
                 "arguments": [{ "directory": "path:./controllers" }]
             }
+        },
+
+        //add the user to the response object
+        "injectUser": {
+            "enabled": true,
+            "priority": 112,
+            "module": {
+                "name":"path:./lib/auth",
+                "method": "injectUser"
+            }
         }
 
     }
