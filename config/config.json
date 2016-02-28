@@ -8,6 +8,16 @@
     },
     
 
+    "databaseConfig": {
+        "database": "krakenblog",
+        "username": "krakenblog",
+        "password": "dupa.8",
+
+        "host": "localhost",
+        "dialect": "mysql", // or 'sqlite', 'postgres', 'mariadb'
+        "port": 3306 // or 5432 (for postgres)
+    },
+
     
     "view engines": {
         "js": {
@@ -28,9 +38,9 @@
     
         ]
     },
-    
 
-    
+
+
     "i18n": {
         "contentPath": "path:./locales",
         "fallback": "en-US"
