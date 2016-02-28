@@ -1,0 +1,22 @@
+{
+  "name": "krakenblogboilerplate",
+  "description": "Blob app boilerplate with kraken.js",
+  "main": "index.js",
+  "author": "Zaak",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.1.16",
+    "bootstrap": "^3.3.6"
+  }
+}
