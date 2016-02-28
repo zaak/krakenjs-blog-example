@@ -1,0 +1,12 @@
+{>"layouts/master" /}
+
+{<body}
+    {#registered}
+        <h1>User registered successfully!</h1>
+        <a href="/login">I want to log in now!</a>
+    {:else}
+        <h1>An error occured!</h1>
+        <p>Note that this demo doesn't care about proper validation of username, or password length. You will just see this page <span class="glyphicon glyphicon-sunglasses"></span></p>
+        <a href="/register">Iwant to try again!</a>
+    {/registered}
+{/body}

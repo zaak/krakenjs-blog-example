@@ -1,0 +1,18 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{@pre type="content" key="labelRegistration"/}</h1>
+
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input class="form-control" id="username" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
+        <input type="hidden" name="_csrf" value="{_csrf}">
+        <button type="submit" class="btn btn-default">Register</button>
+    </form>
+{/body}
