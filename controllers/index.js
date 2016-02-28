@@ -9,7 +9,7 @@ module.exports = function (router) {
 
     router.get('/', function (req, res) {
         
-        
+        model.route = 'index';
         res.render('index', model);
         
         

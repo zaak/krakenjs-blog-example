@@ -13,6 +13,13 @@ var User = database.sequelize.define('User', {
 			this.setDataValue('password', hash);
 		}
 	}
+}, {
+	instanceMethods: {
+		passwordMatches: function(plainTextPass) {
+			var user = this;
+			return bcrypt.compareSync(plainTextPass, user.password);
+		}
+	}
 });
 
 module.exports = User;

@@ -33,9 +33,8 @@
 
     "dust": {
         "helpers": [
-    
-            "dust-makara-helpers"
-    
+            "dust-makara-helpers",
+            "dustjs-helpers"
         ]
     },
 
@@ -51,8 +50,6 @@
     },
 
     "middleware": {
-
-        
         "makara": {
             "priority": 100,
             "enabled": true,
@@ -71,6 +68,15 @@
         "static": {
             "module": {
                 "arguments": [ "path:./.build" ]
+            }
+        },
+
+        "flash": {
+            "priority": 91,
+            "enabled": true,
+            "module": {
+                "name":"connect-flash",
+                "method": "flash"
             }
         },
 

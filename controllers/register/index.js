@@ -3,7 +3,7 @@
 module.exports = function (router) {
 
     router.get('/', function (req, res) {
-        res.render('user/register', {});
+        res.render('user/register', {route: 'register'});
     });
 
     router.post('/', function (req, res) {
