@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{post.title}</h1>
+
+    <div class="entry">
+        <p>By <strong>{post.User.username}</strong>, <span class="text-muted">{post.updatedAt}</span></p>
+        {post.body|s}
+    </div>
+{/body}

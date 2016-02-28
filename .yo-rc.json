@@ -2,7 +2,7 @@
   "generator-kraken": {
     "taskModule": "grunt",
     "lintModule": "eslint",
-    "description": "Blob app boilerplate with kraken.js",
+    "description": "Blog app boilerplate with kraken.js",
     "author": "Zaak",
     "templateModule": "makara",
     "i18n": "i18n",

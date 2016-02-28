@@ -1,18 +1,18 @@
 'use strict';
 
-var IndexModel = require('../models/index');
-
+var Post = require('../models/post');
 
 module.exports = function (router) {
-
-    var model = new IndexModel();
-
     router.get('/', function (req, res) {
-        
-        model.route = 'index';
-        res.render('index', model);
-        
-        
-    });
+        var model =  {
+            route: 'index',
+            added: req.flash('added')
+        };
 
+        Post.findAll().then(function(posts) {
+            model.posts = posts;
+
+            res.render('index', model);
+        });
+    });
 };

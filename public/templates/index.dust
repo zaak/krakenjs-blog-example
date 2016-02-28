@@ -1,5 +1,27 @@
 {>"layouts/master" /}
 
 {<body}
-    <h1>{@pre type="content" key="greeting"/}</h1>
+    <h1>{@pre type="content" key="posts"/}</h1>
+
+
+    {#added}
+        <div class="alert alert-success">
+            <p>Added new post!</p>
+        </div>
+    {/added}
+
+
+    {#user}
+        <p class="clearfix">
+            <a href="/post/new" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add Post</a>
+        </p>
+    {/user}
+
+
+    {#posts}
+        <h2><a href="/post/{.id}">{.title}</a></h2>
+    {:else}
+        <div class="alert alert-info">No posts found.</div>
+    {/posts}
+
 {/body}

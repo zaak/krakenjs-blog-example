@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "requirejs": "^2.1.16",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "ckeditor": "^4.5.7"
   }
 }

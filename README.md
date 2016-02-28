@@ -1,4 +1,4 @@
-KrakenBlogBoilerplate
+Kraken Blog Example
 ===========
 
-Blob app boilerplate with kraken.js
+Blog app boilerplate with kraken.js
